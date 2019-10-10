@@ -14,3 +14,4 @@ public static java.awt.Font getFont() {
 }
 
 ```
+ ![示例](https://github.com/xweichen/javatray/blob/master/eg.png)
