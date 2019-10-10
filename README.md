@@ -7,7 +7,8 @@ java的tray组件位于awt包下，高分辨率下显示过小原因是没有自
 ```
 public static java.awt.Font getFont() {
 	java.awt.Font defaultFont = UIManager.getFont("Label.font");
-	float adjustmentRatio = ArithUtil.div(java.awt.Toolkit.getDefaultToolkit().getScreenResolution(),96).floatValue();
+	float adjustmentRatio = ArithUtil.div(java.awt.Toolkit.getDefaultToolkit().getScreenResolution(),
+        96).floatValue();
 	float newFontSize = defaultFont.getSize() * adjustmentRatio ; 
 	return defaultFont.deriveFont(newFontSize);
 }
